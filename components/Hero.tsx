@@ -1,5 +1,5 @@
 import React from 'react';
-import { scrollToSection } from '../App';
+import { scrollToSection } from '../utils/navigation';
 
 const Hero: React.FC = () => {
   return (

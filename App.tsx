@@ -1,26 +1,10 @@
-
 import React from 'react';
 import Hero from './components/Hero';
 import Benefits from './components/Benefits';
 import OfferTable from './components/OfferTable';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-
-export const scrollToSection = (id: string) => {
-  const element = document.getElementById(id);
-  if (element) {
-    const offset = 100; // Account for sticky header
-    const bodyRect = document.body.getBoundingClientRect().top;
-    const elementRect = element.getBoundingClientRect().top;
-    const elementPosition = elementRect - bodyRect;
-    const offsetPosition = elementPosition - offset;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
-  }
-};
+import { scrollToSection } from './utils/navigation';
 
 const Ticker = () => (
   <div className="w-full bg-black border-b border-white/10 py-3 overflow-hidden">
