@@ -13,6 +13,23 @@
 
       gtag('config', 'AW-17838178620');
     </script>
+    <!-- Event snippet for Submit lead form conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17838178620/IbKNCJip2NgbELyC9LlC',
+            'value': 1.0,
+            'currency': 'USD',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

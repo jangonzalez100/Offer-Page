@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ContactFormData } from '../types';
 
@@ -32,6 +31,10 @@ const ContactForm: React.FC = () => {
 
       if (response.ok) {
         setStatus('success');
+        // Trigger Google Ads Conversion
+        if (typeof (window as any).gtag_report_conversion === 'function') {
+          (window as any).gtag_report_conversion();
+        }
       } else {
         setStatus('error');
       }
