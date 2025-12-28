@@ -1,10 +1,7 @@
 import React from 'react';
-import { PLANS } from '../constants';
 import { scrollToSection } from '../App';
 
 const OfferTable: React.FC = () => {
-  const plan = PLANS[0];
-
   return (
     <section id="offer" className="py-32 px-6 lg:px-12 bg-black relative border-b border-white/10">
       <div className="watermark-sl left-[-10%] bottom-[-5%] rotate-[-15deg]">BUNDLE</div>
@@ -13,7 +10,7 @@ const OfferTable: React.FC = () => {
           
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
-              <h2 className="font-display text-3xl md:text-6xl mb-10 tracking-tight leading-none">
+              <h2 className="font-display text-4xl md:text-6xl mb-10 tracking-tight leading-none">
                 THE<br />ONLY<br />
                 <span className="text-studio-gold">MISSION.</span>
               </h2>
@@ -38,29 +35,36 @@ const OfferTable: React.FC = () => {
           </div>
 
           <div className="lg:col-span-7">
-            <div className="h-full relative p-8 md:p-12 border border-studio-gold/30 bg-studio-gold/[0.03] transition-all duration-500 shadow-[40px_40px_0px_0px_rgba(212,175,55,0.03)] flex flex-col">
+            <div className="h-full relative p-8 md:p-12 border border-studio-gold/30 bg-studio-gold/[0.03] shadow-[40px_40px_0px_0px_rgba(212,175,55,0.03)] flex flex-col">
               
-              <h3 className="font-display text-3xl text-white mb-12 tracking-tight uppercase italic">{plan.name}</h3>
+              <h3 className="font-display text-3xl text-white mb-12 tracking-tight uppercase italic">COMMANDER BUNDLE</h3>
               
               <div className="flex flex-wrap items-end gap-10 mb-12 border-b border-white/5 pb-12">
                 <div className="flex flex-col">
-                  <span className="text-6xl md:text-8xl lg:text-9xl font-display text-white tracking-tighter leading-none">{plan.price}</span>
-                  <span className="text-white/20 text-[8px] font-black uppercase tracking-[0.4em] mt-3 ml-1">Initial Deployment Build</span>
+                  <span className="text-7xl md:text-9xl font-display text-white tracking-tighter leading-none">$599</span>
+                  <span className="text-white/20 text-[8px] font-black uppercase tracking-[0.5em] mt-3 ml-1">Initial Deployment</span>
                 </div>
                 
                 <div className="flex flex-col border-l border-white/10 pl-8 pb-1">
-                  <span className="text-4xl md:text-5xl lg:text-6xl font-display text-studio-gold tracking-tighter leading-none">
-                    {plan.monthly}/MO
-                  </span>
+                  <span className="text-5xl md:text-7xl font-display text-studio-gold tracking-tighter leading-none">$50/MO</span>
                   <span className="text-white/20 text-[8px] font-black uppercase tracking-[0.4em] mt-3">Maintenance Protocol</span>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-4 mb-16">
-                {plan.features.map((feature) => (
-                  <div key={feature.name} className="flex items-center gap-3">
+                {[
+                  'Custom AI-Powered Design',
+                  'Full Mobile Optimization',
+                  'Elite Brand Identity Kit',
+                  'Premium SEO Foundation',
+                  'Secure Cloud Hosting',
+                  '24/7 Threat Monitoring',
+                  'Performance Tuning',
+                  'Dedicated Support'
+                ].map((feature) => (
+                  <div key={feature} className="flex items-center gap-3">
                     <div className="w-1.5 h-1.5 bg-studio-gold/40"></div>
-                    <span className="text-[9px] font-black text-white/80 uppercase tracking-[0.15em]">{feature.name}</span>
+                    <span className="text-[9px] font-black text-white/80 uppercase tracking-[0.15em]">{feature}</span>
                   </div>
                 ))}
               </div>

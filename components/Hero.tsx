@@ -1,10 +1,7 @@
 import React from 'react';
 import { scrollToSection } from '../App';
-import { PLANS } from '../constants';
 
 const Hero: React.FC = () => {
-  const plan = PLANS[0];
-
   return (
     <section className="relative pt-20 pb-40 px-6 lg:px-12 bg-black overflow-hidden border-b border-white/10">
       <div className="watermark-sl left-[-5%] top-[-10%] rotate-[-10deg]">SL</div>
@@ -14,16 +11,16 @@ const Hero: React.FC = () => {
           
           <div className="lg:col-span-7">
             <div className="flex flex-col mb-12">
-              <h1 className="font-display text-[clamp(2.5rem,7vw,7rem)] tracking-tight">
+              <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-tight leading-none mb-2">
                 DIGITAL<br />LAUNCH.
               </h1>
-              <h1 className="font-display text-[clamp(2.5rem,7vw,7rem)] text-outline-gold tracking-tight">
+              <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-outline-gold tracking-tight leading-none">
                 BUNDLE.
               </h1>
             </div>
 
             <div className="inline-block bg-studio-gold px-10 py-6 mb-16 transform -skew-x-6 shadow-[20px_20px_0px_0px_rgba(212,175,55,0.05)]">
-              <span className="font-display text-2xl md:text-3xl text-black block skew-x-6 tracking-widest">
+              <span className="font-display text-2xl md:text-4xl text-black block skew-x-6 tracking-widest">
                 OFFER: $599
               </span>
             </div>
@@ -46,25 +43,31 @@ const Hero: React.FC = () => {
               </div>
 
               <div className="mb-10">
-                <h3 className="font-display text-2xl text-white tracking-tight leading-none italic">{plan.name}</h3>
+                <h3 className="font-display text-2xl text-white tracking-tight leading-none italic">COMMANDER BUNDLE</h3>
               </div>
 
               <div className="space-y-4 mb-12 border-y border-white/5 py-8">
-                {plan.features.slice(0, 5).map((f) => (
-                  <div key={f.name} className="flex items-center gap-4">
-                    <div className="w-1.5 h-1.5 bg-studio-gold rotate-45"></div>
-                    <span className="text-[9px] font-black text-white/70 uppercase tracking-[0.2em]">{f.name}</span>
-                  </div>
-                ))}
+                <div className="flex items-center gap-4">
+                  <div className="w-1.5 h-1.5 bg-studio-gold rotate-45"></div>
+                  <span className="text-[9px] font-black text-white/70 uppercase tracking-[0.2em]">Custom AI-Powered Design</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-1.5 h-1.5 bg-studio-gold rotate-45"></div>
+                  <span className="text-[9px] font-black text-white/70 uppercase tracking-[0.2em]">Full Mobile Optimization</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-1.5 h-1.5 bg-studio-gold rotate-45"></div>
+                  <span className="text-[9px] font-black text-white/70 uppercase tracking-[0.2em]">Elite Brand Identity Kit</span>
+                </div>
               </div>
 
-              <div className="flex flex-wrap items-end gap-6 mb-12">
+              <div className="flex flex-col sm:flex-row sm:items-end gap-6 mb-12">
                 <div className="flex flex-col">
-                  <span className="font-display text-5xl md:text-6xl text-white tracking-tighter leading-none">{plan.price}</span>
+                  <span className="font-display text-6xl text-white tracking-tighter leading-none">$599</span>
                   <span className="text-[8px] font-black text-white/20 uppercase tracking-[0.4em] mt-2">Build Assets</span>
                 </div>
                 <div className="flex flex-col border-l border-white/20 pl-6 pb-1">
-                  <span className="text-studio-gold font-display text-2xl md:text-3xl leading-none tracking-tighter uppercase">{plan.monthly}/MO</span>
+                  <span className="text-studio-gold font-display text-4xl leading-none tracking-tighter uppercase">$50/MO</span>
                   <span className="text-[8px] font-black text-white/20 uppercase tracking-[0.3em] mt-3">Maintenance</span>
                 </div>
               </div>

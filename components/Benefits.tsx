@@ -8,7 +8,7 @@ const Benefits: React.FC = () => {
       
       <div className="max-w-[1440px] mx-auto relative z-10">
         <div className="mb-24">
-          <h2 className="font-display text-4xl md:text-7xl mb-6 tracking-tighter">
+          <h2 className="font-display text-4xl md:text-6xl mb-6 tracking-tighter leading-none">
             THE <span className="text-studio-gold">$50/MO</span><br />NO-BRAINER.
           </h2>
           <div className="w-24 h-1 bg-studio-gold mb-8"></div>
@@ -21,9 +21,9 @@ const Benefits: React.FC = () => {
           {BENEFITS.map((benefit) => (
             <div 
               key={benefit.id} 
-              className="p-10 border border-white/10 hover:border-studio-gold/30 transition-all duration-300 group bg-white/[0.01] flex flex-col justify-between"
+              className="p-10 border border-white/10 hover:border-studio-gold/30 transition-all duration-300 group bg-white/[0.01] flex flex-col min-h-[300px]"
             >
-              <div>
+              <div className="flex-grow">
                 <h3 className="font-display text-xl text-white mb-5 tracking-tight leading-none group-hover:text-studio-gold transition-colors">
                   {benefit.title}
                 </h3>
@@ -32,8 +32,7 @@ const Benefits: React.FC = () => {
                 </p>
               </div>
               
-              <div className="mt-12">
-                <div className="mb-4 h-px w-full bg-white/5 group-hover:bg-studio-gold/20 transition-colors"></div>
+              <div className="mt-12 pt-6 border-t border-white/5">
                 <div className="flex items-center gap-2.5">
                   <div className="w-1.5 h-1.5 bg-studio-gold"></div>
                   <span className="text-[8px] font-black text-studio-gold tracking-[0.4em] uppercase whitespace-nowrap">
