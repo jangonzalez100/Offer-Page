@@ -18,15 +18,16 @@
       .font-display {
         font-family: 'Inter', sans-serif;
         font-weight: 900;
-        letter-spacing: -0.05em;
+        letter-spacing: 0.15em;
         text-transform: uppercase;
+        line-height: 0.9;
       }
       .text-outline {
-        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
         color: transparent;
       }
       .text-outline-gold {
-        -webkit-text-stroke: 1px rgba(212, 175, 55, 0.6);
+        -webkit-text-stroke: 1px rgba(212, 175, 55, 0.4);
         color: transparent;
       }
       @keyframes ticker {
@@ -35,7 +36,7 @@
       }
       @keyframes blink {
         0%, 100% { opacity: 1; transform: scale(1); }
-        50% { opacity: 0.7; transform: scale(1.05); background-color: #ef4444; color: white; }
+        50% { opacity: 0.8; transform: scale(1.02); background-color: #d4af37; color: black; }
       }
       .animate-ticker {
         display: flex;
@@ -50,21 +51,24 @@
       .border-studio-gold { border-color: #d4af37; }
       
       .bg-grid {
-        background-size: 50px 50px;
+        background-size: 60px 60px;
         background-image: 
-          linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-          linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+          linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
       }
       .watermark-sl {
         position: absolute;
-        font-size: 50vw;
+        font-size: 60vw;
         font-weight: 900;
-        color: rgba(255, 255, 255, 0.015);
+        color: rgba(255, 255, 255, 0.01);
         z-index: 0;
         pointer-events: none;
         line-height: 0.7;
         letter-spacing: -0.15em;
         user-select: none;
+      }
+      * {
+        border-radius: 0 !important;
       }
     </style>
   <script type="importmap">
