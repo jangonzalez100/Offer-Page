@@ -14,64 +14,64 @@ const Hero: React.FC = () => {
           
           <div className="lg:col-span-7">
             <div className="flex flex-col mb-12">
-              <h1 className="font-display text-[clamp(3rem,8vw,8rem)] tracking-tight">
+              <h1 className="font-display text-[clamp(2.5rem,7vw,7rem)] tracking-tight">
                 DIGITAL<br />LAUNCH.
               </h1>
-              <h1 className="font-display text-[clamp(3rem,8vw,8rem)] text-outline-gold tracking-tight">
+              <h1 className="font-display text-[clamp(2.5rem,7vw,7rem)] text-outline-gold tracking-tight">
                 BUNDLE.
               </h1>
             </div>
 
             <div className="inline-block bg-studio-gold px-10 py-6 mb-16 transform -skew-x-6 shadow-[20px_20px_0px_0px_rgba(212,175,55,0.05)]">
-              <span className="font-display text-2xl md:text-4xl text-black block skew-x-6 tracking-widest">
+              <span className="font-display text-2xl md:text-3xl text-black block skew-x-6 tracking-widest">
                 OFFER: $599
               </span>
             </div>
 
             <div className="border-l-8 border-studio-gold pl-12 md:pl-20">
-              <h2 className="font-display text-2xl md:text-4xl mb-10 leading-none tracking-tighter">
+              <h2 className="font-display text-xl md:text-3xl mb-10 leading-none tracking-tighter">
                 WE DON'T DECORATE BRANDS.<br />
                 WE <span className="text-studio-gold italic">WEAPONIZE</span> THEM.
               </h2>
-              <p className="text-lg md:text-2xl text-white/30 max-w-2xl leading-tight font-medium tracking-tighter">
+              <p className="text-base md:text-xl text-white/30 max-w-2xl leading-tight font-medium tracking-tighter">
                 Premium custom architecture + mobile supremacy + brand warfare. Speed is your primary asset.
               </p>
             </div>
           </div>
 
           <div className="lg:col-span-5">
-            <div className="relative p-10 md:p-14 border border-white/10 bg-white/[0.02] backdrop-blur-sm shadow-[40px_40px_0px_0px_rgba(255,255,255,0.01)] hover:border-studio-gold/20 transition-all duration-500">
-              <div className="absolute top-0 right-0 bg-white text-black font-black text-[10px] tracking-[0.4em] px-6 py-3 uppercase z-10 animate-urgency">
+            <div className="relative p-8 md:p-12 border border-white/10 bg-white/[0.02] backdrop-blur-sm shadow-[40px_40px_0px_0px_rgba(255,255,255,0.01)] hover:border-studio-gold/20 transition-all duration-500">
+              <div className="absolute top-0 right-0 bg-white text-black font-black text-[9px] tracking-[0.4em] px-5 py-2.5 uppercase z-10 animate-urgency">
                 JANUARY SLOTS: 5 LEFT
               </div>
 
-              <div className="mb-12">
-                <h3 className="font-display text-3xl text-white tracking-tight leading-none italic">{plan.name}</h3>
+              <div className="mb-10">
+                <h3 className="font-display text-2xl text-white tracking-tight leading-none italic">{plan.name}</h3>
               </div>
 
-              <div className="space-y-4 mb-16 border-y border-white/5 py-10">
+              <div className="space-y-4 mb-12 border-y border-white/5 py-8">
                 {plan.features.slice(0, 5).map((f) => (
-                  <div key={f.name} className="flex items-center gap-5">
-                    <div className="w-2 h-2 bg-studio-gold rotate-45"></div>
-                    <span className="text-[10px] font-black text-white/70 uppercase tracking-[0.2em]">{f.name}</span>
+                  <div key={f.name} className="flex items-center gap-4">
+                    <div className="w-1.5 h-1.5 bg-studio-gold rotate-45"></div>
+                    <span className="text-[9px] font-black text-white/70 uppercase tracking-[0.2em]">{f.name}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="flex flex-wrap items-end gap-6 mb-14">
+              <div className="flex flex-wrap items-end gap-6 mb-12">
                 <div className="flex flex-col">
-                  <span className="font-display text-6xl md:text-7xl text-white tracking-tighter leading-none">{plan.price}</span>
+                  <span className="font-display text-5xl md:text-6xl text-white tracking-tighter leading-none">{plan.price}</span>
                   <span className="text-[8px] font-black text-white/20 uppercase tracking-[0.4em] mt-2">Build Assets</span>
                 </div>
                 <div className="flex flex-col border-l border-white/20 pl-6 pb-1">
-                  <span className="text-studio-gold font-display text-3xl md:text-4xl leading-none tracking-tighter uppercase">{plan.monthly}/MO</span>
-                  <span className="text-[8px] font-black text-white/20 uppercase tracking-[0.3em] mt-3">Maintenance Protocol</span>
+                  <span className="text-studio-gold font-display text-2xl md:text-3xl leading-none tracking-tighter uppercase">{plan.monthly}/MO</span>
+                  <span className="text-[8px] font-black text-white/20 uppercase tracking-[0.3em] mt-3">Maintenance</span>
                 </div>
               </div>
 
               <button 
                 onClick={() => scrollToSection('contact')} 
-                className="w-full bg-studio-gold text-black font-display text-2xl py-8 hover:bg-white transition-all shadow-[15px_15px_0px_0px_rgba(0,0,0,0.5)] tracking-widest"
+                className="w-full bg-studio-gold text-black font-display text-xl py-8 hover:bg-white transition-all shadow-[15px_15px_0px_0px_rgba(0,0,0,0.5)] tracking-widest"
               >
                 CLAIM BUNDLE
               </button>
