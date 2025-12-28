@@ -41,7 +41,7 @@ const OfferTable: React.FC = () => {
               
               <div className="flex flex-wrap items-end gap-10 mb-12 border-b border-white/5 pb-12">
                 <div className="flex flex-col">
-                  <span className="text-7xl md:text-9xl font-display text-white tracking-tighter leading-none">$599</span>
+                  <span className="text-7xl md:text-8xl lg:text-9xl font-display text-white tracking-tighter leading-none">$599</span>
                   <span className="text-white/20 text-[8px] font-black uppercase tracking-[0.5em] mt-3 ml-1">Initial Deployment</span>
                 </div>
                 

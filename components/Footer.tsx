@@ -1,7 +1,12 @@
-
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Footer: React.FC = () => {
+  const [year, setYear] = useState<string>('');
+
+  useEffect(() => {
+    setYear(new Date().getFullYear().toString());
+  }, []);
+
   return (
     <footer className="bg-black py-24 px-6 lg:px-12 border-t border-white/10 relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto relative z-10">
@@ -29,7 +34,7 @@ const Footer: React.FC = () => {
         
         <div className="mt-24 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between gap-8 items-center">
           <p className="text-[9px] font-black text-white/10 uppercase tracking-[0.6em]">
-            &copy; {new Date().getFullYear()} STUDIO LEGADO. ALL RIGHTS RESERVED.
+            &copy; {year || '2025'} STUDIO LEGADO. ALL RIGHTS RESERVED.
           </p>
           <div className="flex items-center gap-4">
             <span className="text-[9px] font-black text-white/10 uppercase tracking-[0.6em]">Weaponized by</span>

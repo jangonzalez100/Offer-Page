@@ -17,11 +17,11 @@ const Benefits: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] border border-white/10">
           {BENEFITS.map((benefit) => (
             <div 
               key={benefit.id} 
-              className="p-10 border border-white/10 hover:border-studio-gold/30 transition-all duration-300 group bg-white/[0.01] flex flex-col min-h-[300px]"
+              className="p-10 border border-white/10 hover:border-studio-gold/30 transition-all duration-300 group bg-white/[0.01] flex flex-col min-h-[320px]"
             >
               <div className="flex-grow">
                 <h3 className="font-display text-xl text-white mb-5 tracking-tight leading-none group-hover:text-studio-gold transition-colors">
@@ -32,7 +32,7 @@ const Benefits: React.FC = () => {
                 </p>
               </div>
               
-              <div className="mt-12 pt-6 border-t border-white/5">
+              <div className="mt-12 pt-6 border-t border-white/5 flex flex-col justify-end">
                 <div className="flex items-center gap-2.5">
                   <div className="w-1.5 h-1.5 bg-studio-gold"></div>
                   <span className="text-[8px] font-black text-studio-gold tracking-[0.4em] uppercase whitespace-nowrap">
