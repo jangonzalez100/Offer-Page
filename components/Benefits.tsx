@@ -3,7 +3,7 @@ import { BENEFITS } from '../constants';
 
 const Benefits: React.FC = () => {
   return (
-    <section id="benefits" className="py-24 px-6 lg:px-12 bg-black relative overflow-hidden border-b border-white/10">
+    <section id="maintenance" className="py-24 px-6 lg:px-12 bg-black relative overflow-hidden border-b border-white/10">
       <div className="watermark-sl right-[-10%] top-[20%]">SL</div>
       
       <div className="max-w-[1440px] mx-auto relative z-10">

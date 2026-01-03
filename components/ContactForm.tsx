@@ -48,7 +48,7 @@ const ContactForm: React.FC = () => {
 
   if (status === 'success') {
     return (
-      <section id="contact" className="py-24 px-6 lg:px-12 bg-black">
+      <section id="blueprint" className="py-24 px-6 lg:px-12 bg-black">
         <div className="bg-black border border-studio-gold/20 p-12 md:p-20 text-center max-w-[1440px] mx-auto relative overflow-hidden">
           <div className="watermark-sl left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.05]">SL</div>
           <div className="relative z-10 max-w-2xl mx-auto">
@@ -68,7 +68,7 @@ const ContactForm: React.FC = () => {
   }
 
   return (
-    <section id="contact" className="py-20 md:py-32 px-6 lg:px-12 bg-black relative overflow-hidden border-t border-white/5">
+    <section id="blueprint" className="py-20 md:py-32 px-6 lg:px-12 bg-black relative overflow-hidden border-t border-white/5">
       <div className="max-w-[1440px] mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
           

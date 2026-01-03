@@ -3,7 +3,7 @@ import { scrollToSection } from '../utils/navigation';
 
 const OfferTable: React.FC = () => {
   return (
-    <section id="offer" className="py-24 px-6 lg:px-12 bg-black relative border-b border-white/10">
+    <section id="pricing" className="py-24 px-6 lg:px-12 bg-black relative border-b border-white/10">
       <div className="watermark-sl left-[-10%] bottom-[-5%] rotate-[-15deg]">BUNDLE</div>
       <div className="max-w-[1440px] mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
@@ -74,7 +74,7 @@ const OfferTable: React.FC = () => {
               </div>
 
               <button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection('blueprint')}
                 className="mt-auto block w-full py-10 bg-studio-gold text-black font-display text-3xl tracking-widest hover:bg-white transition-all text-center shadow-[15px_15px_0px_0px_rgba(0,0,0,0.5)] active:translate-y-1 active:shadow-none"
               >
                 RESERVE NOW

@@ -44,10 +44,10 @@ const App: React.FC = () => {
           </button>
           
           <div className="hidden md:flex gap-12 items-center text-[11px] font-black tracking-[0.25em] uppercase">
-            <button onClick={() => scrollToSection('benefits')} className="text-white hover:text-studio-gold transition-colors">Benefits</button>
-            <button onClick={() => scrollToSection('offer')} className="text-white hover:text-studio-gold transition-colors">The Price</button>
+            <button onClick={() => scrollToSection('maintenance')} className="text-white hover:text-studio-gold transition-colors">Benefits</button>
+            <button onClick={() => scrollToSection('pricing')} className="text-white hover:text-studio-gold transition-colors">The Price</button>
             <button 
-              onClick={() => scrollToSection('contact')} 
+              onClick={() => scrollToSection('blueprint')} 
               className="px-8 py-3 bg-studio-gold text-black font-black hover:bg-white transition-all rounded-none tracking-widest"
             >
               CLAIM BUNDLE
@@ -56,7 +56,7 @@ const App: React.FC = () => {
           
           <div className="md:hidden">
             <button 
-              onClick={() => scrollToSection('contact')} 
+              onClick={() => scrollToSection('blueprint')} 
               className="text-studio-gold font-black text-xs tracking-widest uppercase underline underline-offset-4"
             >
               Claim Bundle

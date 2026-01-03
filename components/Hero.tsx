@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
             <div className="flex flex-col lg:flex-row items-start gap-8">
               <div className="w-full lg:w-auto">
                 <button 
-                  onClick={() => scrollToSection('contact')}
+                  onClick={() => scrollToSection('blueprint')}
                   className="w-full sm:w-auto bg-studio-gold text-black font-display text-xl md:text-3xl px-12 py-6 md:px-20 md:py-8 hover:bg-white transition-all shadow-[15px_15px_0px_0px_rgba(255,255,255,0.03)] flex items-center justify-center gap-4 group"
                 >
                   <span>CLAIM MY BUNDLE</span>
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
               </div>
 
               {/* Instant Lead Magnet Callout */}
-              <div className="bg-white/[0.03] border border-white/10 p-5 md:p-6 max-w-sm relative group cursor-pointer hover:border-studio-gold/40 transition-colors" onClick={() => scrollToSection('contact')}>
+              <div className="bg-white/[0.03] border border-white/10 p-5 md:p-6 max-w-sm relative group cursor-pointer hover:border-studio-gold/40 transition-colors" onClick={() => scrollToSection('blueprint')}>
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-[9px] font-black text-studio-gold uppercase tracking-widest">FREE PROTOCOL</span>
                   <div className="flex-1 h-px bg-studio-gold/20"></div>

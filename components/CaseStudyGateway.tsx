@@ -2,7 +2,7 @@ import React from 'react';
 
 const CaseStudyGateway: React.FC = () => {
   return (
-    <section className="py-24 px-6 lg:px-12 bg-black relative overflow-hidden border-b border-white/10">
+    <section id="history" className="py-24 px-6 lg:px-12 bg-black relative overflow-hidden border-b border-white/10">
       <div className="max-w-[1440px] mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 border border-white/5 p-10 md:p-16 bg-white/[0.01]">
           <div className="max-w-2xl">
