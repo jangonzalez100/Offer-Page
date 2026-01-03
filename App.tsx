@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Benefits from './components/Benefits';
 import OfferTable from './components/OfferTable';
 import ContactForm from './components/ContactForm';
+import CaseStudyGateway from './components/CaseStudyGateway';
 import Footer from './components/Footer';
 import { scrollToSection } from './utils/navigation';
 
@@ -66,6 +67,8 @@ const App: React.FC = () => {
 
       <main>
         <Hero />
+        <div className="w-full h-px bg-white/10"></div>
+        <CaseStudyGateway />
         <div className="w-full h-px bg-white/10"></div>
         <Benefits />
         <div className="w-full h-px bg-white/10"></div>

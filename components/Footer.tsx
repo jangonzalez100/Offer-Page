@@ -22,13 +22,13 @@ const Footer: React.FC = () => {
               <div className="w-6 h-8 bg-studio-gold transition-all group-hover:translate-x-1"></div>
             </a>
             <p className="text-white/30 text-[11px] font-black uppercase tracking-[0.3em] leading-loose">
-              Forging digital dominance for tomorrow's leaders. Not just websites. Cultural influence. Built with AI-speed, sustained with elite strategy.
+              Forging digital dominance for tomorrow leaders. Not just websites. Cultural influence. Built with AI speed sustained with elite strategy.
             </p>
           </div>
 
           <div className="flex flex-col md:items-end md:text-right gap-2 self-center">
             <span className="font-display text-xs text-studio-gold tracking-[0.5em] opacity-20">ELITE DIGITAL INFRASTRUCTURE</span>
-            <span className="font-display text-[8px] text-white tracking-[0.4em] opacity-10 uppercase">Proprietary AI Workflows & Strategic Branding</span>
+            <span className="font-display text-[8px] text-white tracking-[0.4em] opacity-10 uppercase">Proprietary AI Workflows and Strategic Branding</span>
           </div>
         </div>
         
